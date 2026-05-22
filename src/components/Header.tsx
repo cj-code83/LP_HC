@@ -30,7 +30,7 @@ export default function Header({
               Retail
             </p>
             <p className="text-sm font-bold text-sidebar-foreground leading-none">
-              Loss Prevention Check
+              Loss Prevention Health Check
             </p>
           </div>
         </button>
