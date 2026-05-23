@@ -27,7 +27,7 @@ export default function Header({
           </div>
           <div className="leading-tight">
             <p className="text-xs font-medium text-sidebar-foreground/60 uppercase tracking-wider">
-              Retail
+              Bunnings
             </p>
             <p className="text-sm font-bold text-sidebar-foreground leading-none">
               Loss Prevention Health Check
