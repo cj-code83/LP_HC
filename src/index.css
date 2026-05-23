@@ -75,37 +75,37 @@
   --border: 0 0% 86%;
   --input: 0 0% 86%;
 
-  /* Green */
+  /* PRIMARY = GREEN */
   --primary: 186 100% 17%;
   --primary-foreground: 0 0% 100%;
 
-  /* Red */
+  /* ACCENT / RED */
   --accent: 7 78% 49%;
   --accent-foreground: 0 0% 100%;
 
   --destructive: 7 78% 49%;
   --destructive-foreground: 0 0% 100%;
 
-  /* Ring */
+  /* RING */
   --ring: 186 100% 17%;
 
-  /* Cards */
+  /* CARDS */
   --card: 0 0% 100%;
   --card-foreground: 0 0% 13%;
 
-  /* Popovers */
+  /* POPOVERS */
   --popover: 0 0% 100%;
   --popover-foreground: 0 0% 13%;
 
-  /* Secondary */
+  /* SECONDARY */
   --secondary: 0 0% 92%;
   --secondary-foreground: 0 0% 20%;
 
-  /* Muted */
+  /* MUTED */
   --muted: 0 0% 92%;
   --muted-foreground: 0 0% 42%;
 
-  /* Sidebar */
+  /* SIDEBAR */
   --sidebar: 186 100% 17%;
   --sidebar-foreground: 0 0% 96%;
   --sidebar-border: 186 70% 12%;
@@ -118,14 +118,14 @@
 
   --sidebar-ring: 7 78% 49%;
 
-  /* Charts */
+  /* CHARTS */
   --chart-1: 186 100% 17%;
   --chart-2: 7 78% 49%;
   --chart-3: 35 90% 52%;
   --chart-4: 270 70% 55%;
   --chart-5: 215 80% 50%;
 
-  /* Fonts */
+  /* FONTS */
   --app-font-sans: "Inter", system-ui, -apple-system, sans-serif;
   --app-font-serif: Georgia, serif;
   --app-font-mono: Menlo, monospace;
@@ -142,37 +142,37 @@
   --border: 0 0% 20%;
   --input: 0 0% 20%;
 
-  /* Green */
+  /* PRIMARY = GREEN */
   --primary: 186 90% 30%;
   --primary-foreground: 0 0% 100%;
 
-  /* Red */
+  /* ACCENT / RED */
   --accent: 7 78% 55%;
   --accent-foreground: 0 0% 100%;
 
   --destructive: 7 78% 55%;
   --destructive-foreground: 0 0% 100%;
 
-  /* Ring */
+  /* RING */
   --ring: 186 90% 30%;
 
-  /* Cards */
+  /* CARDS */
   --card: 0 0% 12%;
   --card-foreground: 0 0% 92%;
 
-  /* Popovers */
+  /* POPOVERS */
   --popover: 0 0% 12%;
   --popover-foreground: 0 0% 92%;
 
-  /* Secondary */
+  /* SECONDARY */
   --secondary: 0 0% 18%;
   --secondary-foreground: 0 0% 78%;
 
-  /* Muted */
+  /* MUTED */
   --muted: 0 0% 16%;
   --muted-foreground: 0 0% 48%;
 
-  /* Sidebar */
+  /* SIDEBAR */
   --sidebar: 186 100% 10%;
   --sidebar-foreground: 0 0% 92%;
   --sidebar-border: 186 60% 8%;
@@ -185,7 +185,7 @@
 
   --sidebar-ring: 7 78% 55%;
 
-  /* Charts */
+  /* CHARTS */
   --chart-1: 186 90% 30%;
   --chart-2: 7 78% 55%;
   --chart-3: 35 85% 58%;
@@ -245,4 +245,58 @@
 /* Smooth transitions */
 *,
 *::before,
-*::after
+*::after {
+  transition-property:
+    color,
+    background-color,
+    border-color,
+    box-shadow,
+    opacity;
+  transition-duration: 150ms;
+  transition-timing-function: ease;
+}
+
+/* YES BUTTON = GREEN */
+.answer-yes:focus {
+  box-shadow: 0 0 0 3px rgba(0, 80, 88, 0.35);
+}
+
+/* NO BUTTON = RED */
+.answer-no:focus {
+  box-shadow: 0 0 0 3px rgba(224, 44, 28, 0.3);
+}
+
+/* ============================================================
+   FORCE RED UI ELEMENTS
+   ============================================================ */
+
+/* Red buttons */
+.bg-primary.red,
+.bg-destructive,
+.bg-accent {
+  background-color: #E02C1C !important;
+  color: white !important;
+}
+
+/* Red text */
+.text-destructive,
+.text-accent {
+  color: #E02C1C !important;
+}
+
+/* Red borders */
+.border-destructive,
+.border-accent {
+  border-color: #E02C1C !important;
+}
+
+/* Green primary */
+.bg-primary {
+  background-color: #005058 !important;
+  color: white !important;
+}
+
+/* Green text */
+.text-primary {
+  color: #005058 !important;
+}
