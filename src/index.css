@@ -59,7 +59,7 @@
 
 /* ============================================================
 BUNNINGS BRAND COLOURS
-Primary Green : #005058 → hsl(186 100% 17%)
+Primary Green : #005058 → hsl(155 97% 18%)
 Secondary Red : #E02C1C → hsl(7 97% 40%)
 Background : #F5F5F5 → hsl(0 0% 96%)
 White : #FFFFFF → hsl(0 0% 100%)
@@ -77,7 +77,7 @@ Dark Text : #222222 → hsl(0 0% 13%)
 --card: 0 0% 100%;
 --card-foreground: 0 0% 13%;
 
---sidebar: 186 100% 17%%;
+--sidebar: 155 97% 18%;
 --sidebar-foreground: 0 0% 95%;
 --sidebar-border: 155 80% 12%;
 --sidebar-primary: 7 97% 40%;
